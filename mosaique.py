@@ -10,6 +10,9 @@ largeur, hauteur = image.size
 # 3. Choisir le nombre de blocs et calculer la hauteur en blocs
 
 blocs = 40
+if blocs <1 or blocs > largeur:
+    print("valeur non conforme (extrêmes), blocs doit être entre 1 et", largeur)
+    exit()
 petite_largeur = blocs
 petite_hauteur = round(hauteur * blocs / largeur)
 
